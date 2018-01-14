@@ -5,8 +5,6 @@ Arduboy2 ard;
 
 #include "Trig.h"
 
-
-uint8_t dex = 0;
 void setup() {
   ard.begin();
 }
@@ -17,7 +15,6 @@ void loop() {
   for(uint8_t i=0; i<128; ++i)
     {
     ard.drawPixel(i,round(static_cast<float>(Sin(i+dex))*10)+31);
-    ard.drawPixel(i,round(static_cast<float>(Cos(i+dex))*10)+31);
     }
   dex++;
   ard.display();
