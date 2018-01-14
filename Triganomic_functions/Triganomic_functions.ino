@@ -5,6 +5,8 @@ Arduboy2 ard;
 
 #include "Trig.h"
 
+uint8_t dex = 0;
+
 void setup() {
   ard.begin();
 }
